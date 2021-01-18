@@ -1,7 +1,7 @@
 extends Node
 
 var network = NetworkedMultiplayerENet.new()
-var port1 = 8787
+var port1 = 8080
 var port2 = 8788
 var M_players = 6
 var player_state_collection = {}
