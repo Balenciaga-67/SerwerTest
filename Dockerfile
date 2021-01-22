@@ -9,5 +9,5 @@ WORKDIR /game
 COPY . ./src
 RUN godot --path ./src --export-pack Linux/X11 /game/game.pck && rm -r ./src
 
-EXPOSE 0.0.0.0:8787
+EXPOSE 8787
 CMD [ "/opt/godot-server", "--main-pack", "/game/game.pck" ]
